@@ -27,11 +27,11 @@
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0; /* Ensure the GIF appears above the images */
+    z-index: 0; 
 }
     h1{
         color: black;
-        background-color: transparent; /* Making the background transparent */
+        background-color: transparent; 
         padding: 10px;
 	font-size: 40px;
         font-family: "Comic Sans MS", cursive, sans-serif;
@@ -39,12 +39,12 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure the text appears above the images */
-        text-align: center; /* Center the text horizontally */
+        z-index: 1; 
+        text-align: center; 
     }
     p{
         color: black;
-        background-color: transparent; /* Making the background transparent */
+        background-color: transparent; 
         padding: 10px;
         font-family: "Comic Sans MS", cursive, sans-serif;
         position: absolute;
@@ -52,13 +52,13 @@
         top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure the text appears above the images */
-        text-align: center; /* Center the text horizontally */
+        z-index: 1; 
+        text-align: center; 
     
      }
      a {
         color: black;
-        background-color: transparent; /* Making the background transparent */
+        background-color: transparent; 
         padding: 10px;
         font-family: "Comic Sans MS", cursive, sans-serif;
         position: absolute;
@@ -66,8 +66,8 @@
 	font-size: 20px;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure the text appears above the images */
-        text-align: center; /* Center the text horizontally */
+        z-index: 1; 
+        text-align: center; 
     }
     .image-container {
         position: absolute;
@@ -83,55 +83,55 @@
             transform: translateY(0) translateX(10px);
         }
         10% {
-            transform: translateY(50px) translateX(-10px); /* Pause */
+            transform: translateY(50px) translateX(-10px); 
         }
         15% {
-            transform: translateY(50px) translateX(-10px); /* Pause */
+            transform: translateY(50px) translateX(-10px); 
         }
         20% {
             transform: translateY(100px) translateX(10px);
         }
         25% {
-            transform: translateY(150px) translateX(-10px); /* Pause */
+            transform: translateY(150px) translateX(-10px); 
         }
         30% {
-            transform: translateY(150px) translateX(-10px); /* Pause */
+            transform: translateY(150px) translateX(-10px); 
         }
         35% {
             transform: translateY(250px) translateX(10px);
         }
         40% {
-            transform: translateY(350px) translateX(-10px); /* Pause */
+            transform: translateY(350px) translateX(-10px); 
         }
         45% {
-            transform: translateY(350px) translateX(-10px); /* Pause */
+            transform: translateY(350px) translateX(-10px); 
         }
         50% {
             transform: translateY(450px) translateX(10px);
         }
         55% {
-            transform: translateY(550px) translateX(-10px); /* Pause */
+            transform: translateY(550px) translateX(-10px); 
         }
         60% {
-            transform: translateY(550px) translateX(-10px); /* Pause */
+            transform: translateY(550px) translateX(-10px); 
         }
         65% {
             transform: translateY(650px) translateX(10px);
         }
         70% {
-            transform: translateY(750px) translateX(-10px); /* Pause */
+            transform: translateY(750px) translateX(-10px); 
         }
         75% {
-            transform: translateY(750px) translateX(-10px); /* Pause */
+            transform: translateY(750px) translateX(-10px); 
         }
         80% {
             transform: translateY(850px) translateX(10px);
         }
         85% {
-            transform: translateY(950px) translateX(-10px); /* Pause */
+            transform: translateY(950px) translateX(-10px); 
         }
         90% {
-            transform: translateY(950px) translateX(-10px); /* Pause */
+            transform: translateY(950px) translateX(-10px); 
         }
         95% {
             transform: translateY(1000px) translateX(10px);
@@ -152,24 +152,20 @@
     <div id="container"></div>
 
     <script>
-        // Array of images
         const images = [
             "happy_1_67.png",
-	    "new_80.png",
-	    "mappa_85.png"
+	    "new_80_1_75.png",
+	    "mappa_85_1_75.png"
         ];
 
-        // Function to get a random image
         function getRandomImage() {
             return images[Math.floor(Math.random() * images.length)];
         }
 
-        // Function to get a random horizontal position
         function getRandomXPosition() {
             return Math.floor(Math.random() * window.innerWidth) + "px";
         }
 	
-        // Function to create and animate the image
         function createImage() {
             const image = document.createElement("img");
             image.src = getRandomImage();
@@ -177,14 +173,12 @@
             image.style.left = getRandomXPosition();
             document.getElementById("container").appendChild(image);
 
-            // Remove the image from the DOM after the animation ends
             setTimeout(() => {
                 image.remove();
             }, 10000); 
         }
 
-        // Start the animation with multiple images at staggered timings
-        setInterval(createImage, 1000); // Adjust the interval between images here (in milliseconds)
+        setInterval(createImage, 1000);
     </script>
 </body>
 </html>

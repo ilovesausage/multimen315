@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>a letter</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-image: url('vtekick15.png'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-repeat: repeat-y; /* Repeat the background image vertically */
+}
+
+/* Apply different background positions for every other row */
+body:nth-child(even) {
+    background-size: auto 140%; /* Adjust as needed */
+    background-position: center top; /* Adjust as needed */
+
+}
+a {
+        color: black;
+        background-color: transparent; 
+        padding: 10px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        position: absolute;
+        top: 120%;
+	font-size: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; 
+        text-align: center; 
+    }
+    .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjusted width to account for the columns' positioning */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        position: relative;
+	margin-bottom: 80px;
+	padding-bottom: 80px;
+    }
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    overflow-y: auto;
+    margin-top: 90px;
+    background-color: transparent;
+    position: relative;
+    left: 285px; /* Adjust the value to move the left column to the right */
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    overflow-y: auto;
+    margin-top: 90px;
+    background-color: transparent;
+    position: relative;
+    right: 20px; /* Adjust the value to move the right column to the right */
+}
+
+
+
+    .left-column-content,
+    .right-column-content {
+        flex: 1;
+        width: 100%;
+        padding-top: 50px; /* Adjust padding to move content below the non-opaque section */
+    }
+
+    .left-column img,
+    .right-column img {
+        display: block;
+        width: 125px; /* Adjust the width of images as needed */
+        margin-bottom: 20px; /* Adjust the vertical spacing between images as needed */
+    }
+
+    .middle-text {
+        flex: 2; /* Adjust the width of the middle section */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: top left;
+        font-size: 20px;
+        padding: 20px; /* Add padding to the middle section */
+	margin-top: 80px;
+	margin-bottom: 80px;
+    }
+</style>
+</head>
+<body>
+     
+    <div class="background-overlay"></div>
+    <div class="container">
+        <div class="left-column">
+            <div class="left-column-content">
+                <!-- Images for left column -->
+                <!-- Add more images for left column as needed -->
+            </div>
+        </div>
+
+        <div class="middle-text">
+            <!-- Text in the middle -->
+            <p>Dear Evan, 
+		<br>
+		<br>
+		Happy birthday !!
+		<br>
+		It's certainly been a while, hasn't it? I hope this letter finds you well and that your time at UCSB is everything you've wanted it be!
+		<br><br>
+		I know we've grown apart as of late but wanted to gift you something a bit more personal to celebrate. <br> I've always treasured every memory we've made together, but it's only now when I'm writing this am I like damn, you were such a big and important part of my childhood!
+	<br><br>
+	Oh man, where do I even begin? Starting from Mrs. Larssen in 4th grade to VanDeventer in the 6th, some of my favorite memories with you been at Deerfield in school. I remember laughing my ass off at your pharaoh costume, playing soccer and handball during break, gambling at your casino at the fiar, and oh my gosh, that chose my own adventure egypt project with like 5k words? <br> <br> But I think my more intimate memories with you have definitely been after school. I always remember being so excited to "go to Evan's house after school" to play, relax, and have a good time. Back then, I loved going to your house so much because it let me forget about my dad's four car accidents and my mom's imposed academic pressure. Hitting home runs into your neighbor's backyard during baseball and playing Smash Bros. Brawl (yeah, it was fun even when you spammed meta knight's special and kirby's down special -_-) brought me so much joy. I even remember this one time my mom forgot to pick me up from school, and being so nervous to ring your doorbell, only to be welcomed with open arms by you and your family (side note, i remember your mom's cooking, literally the best food ever). 
+<br><br>
+	Now, even though we're a bit further apart, I hope you understand you special you were, and always will be, to me! At Angie's housewarming party, I was so happy to see you grow and find people you feel comfortable being around!! The best parts of you still haven't changed: your infectious smile, warm personality, and kindness, and I was amused to see you develop in ways I would have never expected as well (Evan in pre-med ??? I would have never thought). 
+<br> <br>
+Sorry if this is too sentimental for a birthday, but I just wanted to let you know how I feel :] <br>
+I know you'll continue to evolve into the person you want to become, so please keep me updated and in touch!
+<br> <br>
+best,<br>
+ethan lee
+<br>
+<br>
+<br>
+<br>
+<br>
+ </p>
+
+	<a href="xdd.html"> front page </a>
+        </div>
+        <div class="right-column">
+            <div class="right-column-content">
+                <!-- Images for right column -->
+                <!-- Add more images for right column as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
